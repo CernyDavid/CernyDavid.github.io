@@ -1,0 +1,178 @@
+:root {
+    --primary-bg-color: #caf0f8;
+    --secondary-bg-color: #9d0208;
+    --highlight-color: #6e080b;
+    --gradient-color: #72b0e4;
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+html {
+    font-size: 100%;
+    font-family: Cambria;
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: var(--primary-bg-color);
+    border-style: solid;
+    border-color: rgb(14, 9, 82);
+    border-width: 1em;
+}
+header {
+    background-image: url(../images/background.jpg);
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+header img {
+    height: 40%;
+    width: 40%;
+    min-width: 680px;
+}
+html {
+    background-image: url(../images/texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shinigami img {
+    height: 40%;
+    width: 40%;
+}
+.hollow img {
+    height: 30%;
+    width: 30%;
+}
+.fight img {
+    height: 50%;
+    width: 50%;
+}
+.ichigo img {
+    height: 30%;
+    width: 30%;
+}
+.captain img {
+    height: 60%;
+    width: 60%;
+}
+.bleach {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fight, .hollow, .shinigami, .ichigo, .captain {
+    text-align: center;
+}
+a::after {
+    content: "✻";
+    color: darkblue;
+    font-size: 0.7em;
+}
+nav a::after, footer a::after {
+    content: none;
+}
+a {
+    color: darkblue;
+}
+nav ul, footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: var(--secondary-bg-color);
+    background-image: url(../images/nav-texture.jpg);
+    background-repeat: repeat;
+    background-size: 20%;
+    background-position: center center;
+    background-blend-mode: soft-light;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.25em;
+    font-size: 1.5rem;
+    font-family: Calibri;
+}
+nav li {
+    display: inline;
+}
+nav li a:hover {
+    background-color: var(--highlight-color);
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 1.25em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+nav li a.active {
+    font-weight: bold;
+}
+nav li img {
+    width: 2%;
+    padding-right: 1.75em;
+    padding-left: 1em;
+    margin: -1em;
+    min-width: 50px;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: BebasNeue, Impact;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 1.75rem;
+    font-family: BebasNeue, Impact;
+    letter-spacing: 3px;
+}
+footer {
+    background-color: var(--secondary-bg-color);
+    background-image: url(../images/nav-texture.jpg);
+    background-repeat: repeat;
+    background-size: 20%;
+    background-position: center center;
+    background-blend-mode: multiply;
+    bottom: 0;
+    width: 100%;
+    font-family: Calibri;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+footer li {
+    padding: 0.2em;
+}
+.heroes div, .villains div {
+    display: inline-block;
+}
+.heroes img, .villains img {
+    max-height: 300px;
+}
+.heroes, .villains {
+    text-align: center;
+}
+.wrapper-gradient {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em;
+    background-image: linear-gradient(var(--primary-bg-color), var(--gradient-color));
+    border-style: solid;
+    border-color: rgb(14, 9, 82);
+    border-width: 1em;
+}
